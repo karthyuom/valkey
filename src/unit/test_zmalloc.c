@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 #include "../zmalloc.h"
 #include "test_help.h"
 
