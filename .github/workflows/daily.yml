@@ -597,8 +597,6 @@ jobs:
         with:
           repository: ${{ env.GITHUB_REPOSITORY }}
           ref: ${{ env.GITHUB_HEAD_REF }}
-      - name: clean make
-        run: make distclean
       - name: make
         run: make all-with-unit-tests OPT=-O3 USE_JMALLOC=yes SANITIZER=address SERVER_CFLAGS='-DSERVER_TEST -Werror -DDEBUG_ASSERTIONS'
       - name: testprep
