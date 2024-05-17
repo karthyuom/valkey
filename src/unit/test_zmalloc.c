@@ -1,4 +1,4 @@
-#include "../../src/zmalloc.h"
+#include "../zmalloc.c"
 #include "test_help.h"
 
 int test_zmallocInitialUsedMemory(int argc, char **argv, int flags) {
